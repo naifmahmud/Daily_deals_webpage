@@ -57,6 +57,14 @@ for (let cardButton of cardBtns) {
   });
 }
 
+const clearBtn= getElement("clear-btn");
+clearBtn.addEventListener("click",function(){
+    getElement("card-container").innerHTML="";
+     getElement("total-price").innerText=0;
+    getElement("total-quantity").innerText= 0;
+
+})
+
 /*
     const title2= getElement("card-title-2").innerText;
     const title3= getElement("card-title-3").innerText;
